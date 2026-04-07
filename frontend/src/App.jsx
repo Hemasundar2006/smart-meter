@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || 'https://smart-meter-riw1.onrender.com'
 
 function formatValue(value, unit = '') {
   if (value === null || value === undefined || Number.isNaN(Number(value))) {
